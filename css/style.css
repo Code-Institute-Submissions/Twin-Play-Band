@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
+
+body {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+/*--This is the Heading*/
+
+h2{
+    font-family: 'Oswald' sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: left;
+    padding-left: 5%;
+    font-size: 30px;
+    color: blue;  
+}
+
+/*---Top Navigation Bar*/
+
+.topnav{ 
+    overflow: visible;
+    margin-right: 2px;
+    padding-top: 2%;
+    padding-right: 5%;
+}
+
+.topnav a {
+    float: right;
+    color: blue;
+    text-align: center;
+    padding: 5px;
+    font-size: 17px;  
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active{
+    background-color: rgba(25, 196, 253, 0.253);
+    color:blue;
+}
+
+/*---This is styling for the footer, Paragraph in footer and social network lists*/
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.follow {
+    text-align: center;
+    color: white;
+}
+
+.social-networks li {
+    text-align: center;
+    display: inline;
+    margin: 1%;
+    padding: 5%;
+    color: blue;
+}
+
+/*---gallery page------*/
+#photo {
+    clear: both;
+    line-height: 0;
+    column-count: 2;
+    column-gap: 0px;   
+}
+
+#photo img {
+    width: 100%;
+}
+
+/*-- Responsive Element Top Navigations */
+
+@media screen and (max-width: 1393px){
+    
+    .topnav {
+        clear: right;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1393px){
+    #photo {
+        column-count: 1;
+    }
+}
+
+@media screen and (max-width: 1393px){
+    .videos{
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding: 30px 0;
+        margin-top: 0;
+    }
+
+    .text-center {
+        width:100%;
+        float:left;
+        padding: 0;
+    }
+
+    p {
+        width:100%;
+        float:left;
+        padding: 0;
+    }
+}
+/*--------- Event Page----------- */
+.container {
+    padding: 100px;
+    font-size: large;
+}
+
+.notice {
+    width: 50%;
+    height: 100%;
+    margin: left;
+    padding-left: 20px; 
+    color: #fff;
+}
+
+.notice .info h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.notice .info p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 20px;
+    text-transform: none;
+    color: #fff;
+}
+
+.shows {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding-right: 20px;
+    padding-top: 50%;
+    box-sizing: border-box;
+
+}
+
+.shows ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.shows ul li {
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+}
+
+.shows ul li .time {
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+
+.shows ul li:hover .time{
+    background: #e91e63;
+} 
+
+.shows ul li .time h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+.shows ul li .time h2 span {
+    font-size: 30px;
+}
+
+.shows ul li .details {
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.shows ul li .details h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+.shows ul li .details p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.shows ul li .details a {
+    display:inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #262626;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.shows ul li .details a:hover {
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
+/*-- Cards for Twin Play merchandise----- */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: left;
+  padding-left: 20px;
+  text-align: center;
+  font-family: arial;
+  color: #fff;
+}
+
+.card h1 {
+    font-size: 20px;
+    color: white;
+}
+
+.price {
+  color: white;
+  font-size: 22px;
+}
+
+.card button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: 0;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
